@@ -1,0 +1,164 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta http-equiv="Content-Type" content="text/html; charset=UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+<title>ИИ-тренажёр переговоров с сетями — материалы для самостоятельного изучения</title>
+<style>
+*, ::before, ::after { box-sizing: border-box; margin: 0; padding: 0; }
+body { font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, "Noto Sans", sans-serif; background: rgb(245,245,247); color: rgb(29,29,31); line-height: 1.55; padding: 20px; }
+.container { max-width: 960px; margin: 0 auto; }
+header { text-align: center; padding: 48px 0 12px; }
+header h1 { font-size: 2em; font-weight: 700; letter-spacing: -0.025em; margin-bottom: 6px; }
+header h1 span { color: rgb(0,102,204); }
+header .sub { color: rgb(110,110,115); font-size: 1.05em; max-width: 640px; margin: 0 auto; }
+header .meta { color: rgb(154,154,159); font-size: 0.85em; margin-top: 10px; }
+.back-link { display: inline-block; margin-top: 14px; padding: 8px 18px; background: rgb(0,102,204); color: #fff; border-radius: 8px; text-decoration: none; font-size: 0.85em; font-weight: 500; }
+.back-link:hover { background: rgb(0,92,184); }
+
+.card { background: rgb(255,255,255); border-radius: 14px; margin-bottom: 12px; box-shadow: rgba(0,0,0,0.07) 0 1px 3px; overflow: hidden; }
+.card-header { display: flex; align-items: stretch; }
+.card-num { width: 52px; display: flex; align-items: center; justify-content: center; font-size: 1.1em; font-weight: 700; color: rgb(255,255,255); flex-shrink: 0; background: rgb(0,102,204); }
+.card-title-area { flex: 1 1 0%; padding: 16px 20px 12px; }
+.card-title-area h3 { font-size: 1.05em; font-weight: 600; margin: 2px 0 4px; line-height: 1.4; }
+.card-title-area h3 a { color: rgb(0,102,204); text-decoration: none; }
+.card-title-area h3 a:hover { text-decoration: underline; }
+.card-title-area .summary { font-size: 0.9em; color: rgb(60,60,65); margin-bottom: 8px; }
+.card-title-area .useful { font-size: 0.85em; color: rgb(110,110,115); background: rgb(245,245,247); border-left: 3px solid rgb(0,102,204); padding: 8px 12px; border-radius: 0 8px 8px 0; }
+.card-title-area .useful strong { color: rgb(29,29,31); font-weight: 600; }
+
+.cheatsheet { background: rgb(255,255,255); border-radius: 14px; margin: 36px 0 12px; box-shadow: rgba(0,0,0,0.07) 0 1px 3px; padding: 22px 24px; }
+.cheatsheet h2 { font-size: 1.15em; font-weight: 700; margin-bottom: 14px; }
+.cheat-row { display: flex; flex-wrap: wrap; gap: 8px 14px; padding: 7px 0; border-bottom: 1px solid rgb(240,240,242); font-size: 0.9em; align-items: baseline; }
+.cheat-row:last-child { border-bottom: none; }
+.cheat-task { font-weight: 600; flex: 1 1 260px; min-width: 220px; }
+.cheat-arrow { color: rgb(154,154,159); }
+.cheat-tool { color: rgb(0,102,204); font-weight: 500; flex: 1 1 300px; }
+
+footer { text-align: center; padding: 32px 0 20px; color: rgb(154,154,159); font-size: 0.82em; }
+footer a { color: rgb(0,102,204); text-decoration: none; }
+@media (max-width: 600px) {
+  body { padding: 12px; }
+  header h1 { font-size: 1.5em; }
+  .card-num { width: 38px; font-size: 0.9em; }
+  .card-title-area { padding: 12px 14px 8px; }
+}
+</style>
+</head>
+<body>
+<div class="container">
+
+<header>
+  <h1>🤖 <span>ИИ-тренажёр переговоров с сетями</span></h1>
+  <p class="sub">Дополнительные материалы для самостоятельного изучения — 9 источников из практикума «ИИ-тренажёр: победа в жёстких переговорах с сетями»</p>
+  <p class="meta">Аудитория: коммерческие директора FMCG · AI для FMCG 2026 · Месяц 2</p>
+  <a class="back-link" href="https://mrvolkomorov.github.io/ai-fmcg-portal/" target="_blank">← Назад к каталогу материалов</a>
+</header>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#7b1fa2;">1</div>
+    <div class="card-title-area">
+      <h3><a href="https://help.openai.com/ru-ru/articles/8554397-creating-and-editing-gpts" target="_blank" rel="noopener">OpenAI: Создание и редактирование GPT</a> — help.openai.com (рус.)</h3>
+      <p class="summary">Разбор всех полей конструктора: название, инструкции, знания (до 20 файлов по 512 МБ), возможности, тестирование через предпросмотр. Ключевое правило OpenAI: в знания — справочные материалы, в инструкции — правила поведения.</p>
+      <p class="useful"><strong>Чем полезен:</strong> разъясняет, чем инструкция отличается от загруженных файлов, и объясняет, почему поведение собранного бота меняется в зависимости от того, куда попал текст с характером и правилами. Даёт рабочую рекомендацию: отдавать приоритет позитивным указаниям вместо длинных списков запретов.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#7b1fa2;">2</div>
+    <div class="card-title-area">
+      <h3><a href="https://help.openai.com/ru-ru/articles/20001519" target="_blank" rel="noopener">OpenAI: Вывод пользовательских GPT из эксплуатации — FAQ</a> — help.openai.com (рус.)</h3>
+      <p class="summary">Ключевые даты: с 26 октября 2026 создание новых GPT становится недоступно, 11 декабря 2026 — все GPT отключаются, для части Enterprise — 11 февраля 2027. Описано, что переносится в плагин, а что теряется.</p>
+      <p class="useful"><strong>Чем полезен:</strong> показывает срок службы инструмента и порядок действий при его выводе из эксплуатации: куда переносятся инструкции и файлы, что проверить после переноса.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#7b1fa2;">3</div>
+    <div class="card-title-area">
+      <h3><a href="https://help.openai.com/ru-ru/articles/11325361-troubleshooting-gpts" target="_blank" rel="noopener">OpenAI: Устранение неполадок GPT</a> — help.openai.com (рус.)</h3>
+      <p class="summary">Систематический разбор типовых сбоев: бот не следует инструкциям, плохо использует загруженные файлы, не сдаёт файлы для скачивания, ссылки не кликабельны. По каждому пункту — конкретный порядок действий.</p>
+      <p class="useful"><strong>Чем полезен:</strong> содержит готовые рецепты решения распространённых проблем: как сокращать инструкции без потери смысла, как переформулировать правило в формат «когда происходит X — делай Y», почему сложные файлы читаются хуже простых.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#e65100;">4</div>
+    <div class="card-title-area">
+      <h3><a href="https://support.claude.com/en/articles/9519177-how-can-i-create-and-manage-projects" target="_blank" rel="noopener">Anthropic: Как создавать проекты и управлять ими</a> — support.claude.com</h3>
+      <p class="summary">Пять шагов создания проекта, загрузка файлов в базу проекта, поле инструкций проекта. Ограничение: контекст не переносится между чатами, если не добавлен в базу знаний. На бесплатном тарифе доступно до 5 проектов.</p>
+      <p class="useful"><strong>Чем полезен:</strong> описывает способ собрать отдельного собеседника под каждую сеть: файлы подключаются один раз и действуют во всех диалогах проекта. Объясняет механику, из-за которой каждый новый диалог начинается заново.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#e65100;">5</div>
+    <div class="card-title-area">
+      <h3><a href="https://t-j.ru/system-prompts-ai/" target="_blank" rel="noopener">Т—Ж: Как настроить чат-бота под себя, чтобы каждый раз не объяснять всё заново</a> — t-j.ru</h3>
+      <p class="summary">Разбор семи блоков пользовательской инструкции: цель и контекст, роль, стиль и тон, формат, точность ответа, ограничения, инструкции для типовых задач. Пошаговый алгоритм из 7 шагов. Три готовых шаблона, включая «Вариант 3. Для критического собеседника». Показано, где поле инструкций в ChatGPT, Claude, Gemini, Perplexity, Grok, Qwen.</p>
+      <p class="useful"><strong>Чем полезен:</strong> даёт готовый шаблон роли с формулировками, как заставить модель не соглашаться автоматически и не подлизываться. Блок «точность ответа» содержит рабочие конструкции для требования ссылаться на источник данных. Алгоритм из семи шагов помогает собрать инструкцию за один подход.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#e65100;">6</div>
+    <div class="card-title-area">
+      <h3><a href="https://giga.chat/help/articles/ai-for-a-commercial-offer" target="_blank" rel="noopener">GigaChat: Как составить коммерческое предложение с помощью нейросети</a> — giga.chat</h3>
+      <p class="summary">Шесть шагов: цель и портрет клиента → вводные → выбор нейросети → промт → редактура → оформление. Готовый промт с разбором результата. Сравнение 10 нейросетей с указанием работающих в России без VPN. Разбор подводных камней.</p>
+      <p class="useful"><strong>Чем полезен:</strong> описывает пошаговый процесс создания КП и типичные ошибки генерации: модель выдумывает характеристики продукта и цифры при отсутствии их в исходных данных. Практические советы: запрашивать несколько вариантов заголовков, дорабатывать текст поэтапно.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#00838f;">7</div>
+    <div class="card-title-area">
+      <h3><a href="https://securegpt.ru/blog/10-promptov-dlya-proverki-dogovora" target="_blank" rel="noopener">SecureGPT: 10 промптов для проверки договора с ChatGPT за 5 минут</a> — securegpt.ru</h3>
+      <p class="summary">Десять готовых промптов: реквизиты сторон, скрытые обязательства, кабальные условия, таблица штрафов и сроков, условия расторжения, противоречия, законность, анализ рисков, интеллектуальная собственность, итоговая оценка. Примеры ответов модели. Дополнительно: мега-промпт, приёмы вывода результата в Word, границы применимости.</p>
+      <p class="useful"><strong>Чем полезен:</strong> библиотека готовых запросов для покадровой проверки договоров. Показывает способ получить на выходе протокол разногласий в Word с редакцией пункта и обоснованием. Содержит порядок обезличивания документа перед загрузкой.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#00838f;">8</div>
+    <div class="card-title-area">
+      <h3><a href="https://dirclub.ru/dogovor-postavki-fmcg/" target="_blank" rel="noopener">Клуб директоров: Чек-лист к договору поставки FMCG B2B</a> — dirclub.ru</h3>
+      <p class="summary">Десять пунктов проверки: предмет договора, сроки и подтверждение заказа, требования к маркировке, порядок изменения цены, момент исполнения обязательств, переход права собственности, отсрочка платежа, лимитирование рисков, штрафы, расторжение. Расчёт пени 1/365 ставки ЦБ ≈ 0,9% в месяц против 3% при 0,1% в день.</p>
+      <p class="useful"><strong>Чем полезен:</strong> эталонный список пунктов для сверки полноты проведённого анализа. Фиксирует типовую конструкцию: пеня, привязанная к ключевой ставке, при распространённой ставке 0,1% в день.</p>
+    </div>
+  </div>
+</div>
+
+<div class="card">
+  <div class="card-header">
+    <div class="card-num" style="background:#2e7d32;">9</div>
+    <div class="card-title-area">
+      <h3><a href="https://help.openai.com/ru-ru/articles/7039943-how-openai-handles-data-in-consumer-services" target="_blank" rel="noopener">OpenAI: Как OpenAI обрабатывает данные в потребительских сервисах</a> — help.openai.com (рус.)</h3>
+      <p class="summary">Как используются, передаются и защищаются данные ChatGPT: временные чаты, память, экспорт и удаление данных, порядок удаления истории. Условия доступа сотрудников к контенту и основания для него. Где хранится контент.</p>
+      <p class="useful"><strong>Чем полезен:</strong> описывает полный цикл обращения с данными: что хранится, где хранится, как удаляется, в каких случаях доступ к материалам получают сотрудники и поставщики.</p>
+    </div>
+  </div>
+</div>
+
+<footer>
+  <p>Материалы к воркшопу Алексея Парфуна «AI для FMCG 2026» · Месяц 2 · «ИИ-тренажёр: победа в жёстких переговорах с сетями»</p>
+  <p style="margin-top:4px;"><a href="https://mrvolkomorov.github.io/ai-fmcg-portal/">Каталог материалов</a> · <a href="https://github.com/mrvolkomorov/ai-fmcg-negotiation-materials">Репозиторий на GitHub</a></p>
+</footer>
+
+</div>
+</body>
+</html>
